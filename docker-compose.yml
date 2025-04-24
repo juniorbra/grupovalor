@@ -3,10 +3,8 @@ version: '3.8'
 services:
   web:
     image: hvidigaljr/grupovalor:latest
-    ports:
-      - "3001:3000"
     networks:
-      - app-network
+      - portainer
     deploy:
       mode: replicated
       replicas: 1
@@ -26,5 +24,6 @@ services:
       - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
 
 networks:
-  app-network:
-    driver: bridge
+  portainer:
+    external: true
+    name: portainer
