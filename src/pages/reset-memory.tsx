@@ -46,8 +46,8 @@ export default function ResetMemory() {
     
     try {
       setLoading(true)
-      // Webhook da G2D Consultoria para limpar memória
-      const response = await fetch('https://webhooks.botvance.com.br/webhook/f8d87a85-aecf-42bd-a1ad-g2dconsult-limpar-memoria', {
+      // Webhook do Grupo Valor para limpar memória
+      const response = await fetch('https://webhooks.botvance.com.br/webhook/d6ed9ab4-d771-46ca-valor-resetmem', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

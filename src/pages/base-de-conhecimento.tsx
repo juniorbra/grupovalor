@@ -111,7 +111,7 @@ export default function BaseDeConhecimento() {
 
       // Webhook notification
       try {
-        await fetch('https://webhooks.botvance.com.br/webhook/5e16d45c-43af-g2d-consult-atualiza-kb', {
+        await fetch('https://webhooks.botvance.com.br/webhook/f733c7b6-0b5b-4ac2-9d0f-grupovalor-kb', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
